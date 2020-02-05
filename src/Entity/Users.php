@@ -17,7 +17,7 @@ class Users
     private $id;
 
     /**
-     * @ORM\OneToOne(targetEntity="App\Entity\individuals", inversedBy="testUsers", cascade={"persist", "remove"})
+     * @ORM\OneToOne(targetEntity="App\Entity\individuals", inversedBy="users")
      * @ORM\JoinColumn(nullable=false)
      */
     private $individ;
